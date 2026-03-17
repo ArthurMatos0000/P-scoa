@@ -1,2 +1,0 @@
-# Páscoa
-Atividade do Sandro
