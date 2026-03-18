@@ -11,40 +11,87 @@ body {
 }
 
 header {
-    background-color: #ff6f61;
+    background: linear-gradient(135deg, #66a3c9, #ff8a80, #d074d2);
     color: white;
     padding: 15px;
     text-align: center;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+div#caixa {
+    width: 30%;
+    height: 30rem;
+    background-color: #8fdfc5;
+    position: absolute;
+    margin-top: 5px;
+    z-index: -1;
+    margin-left: 5px;
+    border-radius: 10px;
 }
 
 h1 {
+    user-select: none;
+    -webkit-user-drag: none;
     font-size: 2.1em;
     margin: 0;
+    background: linear-gradient(135deg, #4f0f94, #f11919, #161908);
+    background-size: 300% 300%;         
+    background-position: 0% 50%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    animation: gradientMove 4s ease-in-out infinite alternate;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 h2 {
     font-size: 1.3em;
     margin: 0;
     position: relative;
-    top: 410px;
-    right: 430px;
+    top: 21.8rem;
+    right: 18.7rem;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
-h3 {
-    font-size: 1.1em;
-    margin: 0;
+button#Add {
     position: relative;
-     top: 410px;
-    right: 430px;
+    top: 22.7rem;
+    right: 16rem;
+    background-color: #ff8a80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button#Add:hover {
+  background-color: #45a049;
+  transform: scale(1.05); 
 }
 
 img {
-    display: block;
-  
+    display: block; 
     max-width: 60%;
-    height: auto;
+    width: 20rem;
+    height: 20rem;
     border-radius: 10px;
     float: left;
-    margin-left: 10px;
-    margin-top: 10px;
-}
+    margin-left: 17px;
+    margin-top: 18px;
+    user-select: none;
+    -webkit-user-drag: none;
+}   
