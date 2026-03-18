@@ -23,11 +23,24 @@ div#caixa {
     width: 30%;
     height: 30rem;
     background-color: #8fdfc5;
-    position: absolute;
-    margin-top: 5px;
+    position: relative;
+    margin-top: 0.7rem;
     z-index: -1;
     margin-left: 5px;
     border-radius: 10px;
+    float: left;
+}
+
+div#caixaDois {
+    width: 30%;
+    height: 30rem;
+    background-color: #8fdfc5;
+    position: relative;
+    margin-top: 0.7rem;
+    z-index: -1;
+    border-radius: 10px;
+    float: left;
+    margin-left: 1rem;
 }
 
 h1 {
@@ -57,17 +70,19 @@ h1 {
 h2 {
     font-size: 1.3em;
     margin: 0;
-    position: relative;
-    top: 21.8rem;
-    right: 18.7rem;
+    position: absolute;
+    left: 2rem;
+    top: 21rem;
     user-select: none;
     -webkit-user-drag: none;
 }
 
 button#Add {
-    position: relative;
-    top: 22.7rem;
-    right: 16rem;
+    position: absolute;
+    top: 26rem;
+    right: 3.4rem;
+    width: 70%;
+    height: 3rem;
     background-color: #ff8a80;
     color: white;
     border: none;
@@ -85,13 +100,13 @@ button#Add:hover {
 
 img {
     display: block; 
-    max-width: 60%;
+    max-width: 90%;
     width: 20rem;
     height: 20rem;
     border-radius: 10px;
     float: left;
     margin-left: 17px;
-    margin-top: 18px;
+    margin-top: 10px;
     user-select: none;
     -webkit-user-drag: none;
 }   
