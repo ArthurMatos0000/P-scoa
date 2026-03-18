@@ -77,6 +77,16 @@ h2 {
     -webkit-user-drag: none;
 }
 
+h2#h2Dois {
+    font-size: 1.3em;
+    margin: 0;
+    position: absolute;
+    left: 2rem;
+    top: 21rem;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 button#Add {
     position: absolute;
     top: 26rem;
@@ -97,6 +107,29 @@ button#Add:hover {
   background-color: #45a049;
   transform: scale(1.05); 
 }
+
+button#AddDois{
+    position: absolute;
+    top: 26rem;
+    right: 3.4rem;
+    width: 70%;
+    height: 3rem;
+    background-color: #ff8a80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button#AddDois:hover {
+  background-color: #45a049;
+  transform: scale(1.05); 
+}
+
+
 
 img {
     display: block; 
