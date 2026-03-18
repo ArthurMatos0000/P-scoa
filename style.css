@@ -26,12 +26,24 @@ div#caixa {
     position: relative;
     margin-top: 0.7rem;
     z-index: -1;
-    margin-left: 5px;
+    margin-left: 2.5rem;
     border-radius: 10px;
     float: left;
 }
 
 div#caixaDois {
+    width: 30%;
+    height: 30rem;
+    background-color: #8fdfc5;
+    position: relative;
+    margin-top: 0.7rem;
+    z-index: -1;
+    border-radius: 10px;
+    float: left;
+    margin-left: 1rem;
+}
+
+div#caixaTres {
     width: 30%;
     height: 30rem;
     background-color: #8fdfc5;
@@ -87,6 +99,16 @@ h2#h2Dois {
     -webkit-user-drag: none;
 }
 
+h2#Tres {
+    font-size: 0.9rem;
+    margin: 0;
+    position: absolute;
+    right: 2rem;
+    top: 21rem;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 button#Add {
     position: absolute;
     top: 26rem;
@@ -129,7 +151,26 @@ button#AddDois:hover {
   transform: scale(1.05); 
 }
 
+button#AddTres{
+    position: absolute;
+    top: 26rem;
+    right: 3.4rem;
+    width: 70%;
+    height: 3rem;
+    background-color: #ff8a80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
+button#AddTres:hover {
+  background-color: #45a049;
+  transform: scale(1.05); 
+}
 
 img {
     display: block; 
