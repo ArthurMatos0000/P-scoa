@@ -100,7 +100,7 @@ h2#h2Dois {
 }
 
 h2#Tres {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 0;
     position: absolute;
     right: 2rem;
@@ -123,6 +123,8 @@ button#Add {
     font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 button#Add:hover {
@@ -144,6 +146,8 @@ button#AddDois{
     font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 button#AddDois:hover {
@@ -165,6 +169,8 @@ button#AddTres{
     font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 button#AddTres:hover {
