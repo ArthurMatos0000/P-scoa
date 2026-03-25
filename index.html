@@ -13,39 +13,61 @@
 </header>
 
 <main>
-    <div id="caixa">
-        <img src="https://i.postimg.cc/13RFHmvc/77386278-71dc-4b3d-984a-26e656ca9def.png">
-        <h2>Ovo de Páscoa Ao Leite com <br> Pelúcia Decacau. R$ 89,99. <br>
-        10x de R$ 8,99 (sem juros).</h2>
-        <button id="Add">Adicionar ao Carrinho</button>
-</div>  
-    <div id="caixaDois">
-        <img src="https://i.postimg.cc/1znnvPds/shopping-(1).webp">
-        <h2 id="Dois">Ovo de Páscoa Divino Kids Scooby Doo 120g. R$ 42,60. <br>
-        10x de R$ 4,26 (sem juros).</h2>
-        <button id="AddDois">Adicionar ao Carrinho</button>
-</div>
-    <div id="caixaTres">
-        <img src="https://i.postimg.cc/yxPy7ss7/shopping-(2).webp">
-        <h2 id="Tres">Ovo de Páscoa Delice Chocolate ao Leite Jovens Titãs Infantil 90g com Copão 3D Robin ou Mutano Sortido. R$ 69,99 agora ou R$ 5,83/mês x 12 (sem juros).</h2>
-        <button id="AddTres">Adicionar ao Carrinho</button>
-    </div>
-<div id="caixaQuatro">
-        <img src="https://i.postimg.cc/YS6hBRSc/shopping-(3).webp">
-        <h2 id="Quatro">Cacau Show Ovo de Páscoa ao Leite Chaveiro Luffy One Piece. 170g R$ 83,99 ou 2x de R$ 41,99 (sem juros).</h2>
-        <button id="AddQuatro">Adicionar ao Carrinho</button>
-    </div>
-<div id="caixaCinco">
-        <img src="https://i.postimg.cc/bNZ0fXcF/shopping-(4).webp">
-        <h2 id="Cinco">Kopenhagen Ovo De Páscoa Wandinha Com Bolsa E Pins 120g. R$ 169,90.</h2>
-        <button id="AddCinco">Adicionar ao Carrinho</button>
-    </div>
-<div id="caixaSeis">
-        <img src="https://i.postimg.cc/P5xxNDM5/shopping-(5).webp">
-        <h2 id="Seis">Ovo De Páscoa Arcor 120g - Unicórnio. R$ 44,99 ou 8x de R$ 5,62 (sem juros)</h2>
-        <button id="AddSeis">Adicionar ao Carrinho</button>
-    </div>
+
+  <div class="produto">
+    <img src="https://i.postimg.cc/13RFHmvc/77386278-71dc-4b3d-984a-26e656ca9def.png">
+    <h2>Ovo de Páscoa Ao Leite com Pelúcia Decacau - R$ 89,99</h2>
+    <button class="add-to-cart">Adicionar ao Carrinho</button>
+  </div>
+
+  <div class="produto">
+    <img src="https://i.postimg.cc/1znnvPds/shopping-(1).webp">
+    <h2>Ovo Divino Kids Scooby Doo 120g - R$ 42,60</h2>
+    <button class="add-to-cart">Adicionar ao Carrinho</button>
+  </div>
+
+  <div class="produto">
+    <img src="https://i.postimg.cc/yxPy7ss7/shopping-(2).webp">
+    <h2>Ovo Jovens Titãs 90g com Copão 3D - R$ 69,99</h2>
+    <button class="add-to-cart">Adicionar ao Carrinho</button>
+  </div>
+
+  <div class="produto">
+    <img src="https://i.postimg.cc/YS6hBRSc/shopping-(3).webp">
+    <h2>Ovo ao Leite Chaveiro Luffy One Piece 170g - R$ 83,99</h2>
+    <button class="add-to-cart">Adicionar ao Carrinho</button>
+  </div>
+
+  <div class="produto">
+    <img src="https://i.postimg.cc/bNZ0fXcF/shopping-(4).webp">
+    <h2>Ovo Wandinha com Bolsa e Pins 120g - R$ 169,90</h2>
+    <button class="add-to-cart">Adicionar ao Carrinho</button>
+  </div>
+
+  <div class="produto">
+    <img src="https://i.postimg.cc/P5xxNDM5/shopping-(5).webp">
+    <h2>Ovo Arcor Unicórnio 120g - R$ 44,99</h2>
+    <button class="add-to-cart">Adicionar ao Carrinho</button>
+  </div>
+
 </main>
+
+<button id="open-cart">🛒 Carrinho</button>
+
+<div id="overlay"></div>
+
+<aside id="cart-panel" class="cart">
+  <div class="cart-header">
+    <h2>Meu Carrinho</h2>
+    <button id="close-cart">✖</button>
+  </div>
+
+  <div id="cart-items"></div>
+
+  <div class="cart-footer">
+    <strong>Total: R$ <span id="cart-total">0.00</span></strong>
+  </div>
+</aside>
 
     <script src="script.js"></script>
 </body>

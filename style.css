@@ -1,313 +1,221 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f0e6d2;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+  background-color: #f0e6d2;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
 header {
-   background-image: url(https://i.postimg.cc/DZWpzxS4/Chat-GPT-Image-25-de-mar-de-2026-08-19-31.png);
-    background-size: cover;
-    background-position: center;
-    height: 28rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-image: url(https://i.postimg.cc/DZWpzxS4/Chat-GPT-Image-25-de-mar-de-2026-08-19-31.png);
+  background-size: cover;
+  background-position: center;
+  height: 28rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: -80px;
 }
 
-div#caixa {
-    width: 30%;
-    height: 30rem;
-    background-color: #8fdfc5;
-    position: relative;
-    margin-top: 0.7rem;
-    z-index: -1;
-    margin-left: 2.5rem;
-    border-radius: 10px;
-    float: left;
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
 }
 
-div#caixaDois {
-    width: 30%;
-    height: 30rem;
-    background-color: #8fdfc5;
-    position: relative;
-    margin-top: 0.7rem;
-    z-index: -1;
-    border-radius: 10px;
-    float: left;
-    margin-left: 1rem;
+.produto {
+  background-color: #8fdfc5;
+  height: 30rem;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  text-align: center;
 }
 
-div#caixaTres {
-    width: 30%;
-    height: 30rem;
-    background-color: #8fdfc5;
-    position: relative;
-    margin-top: 0.7rem;
-    z-index: -1;
-    border-radius: 10px;
-    float: left;
-    margin-left: 1rem;
+.produto img {
+  width: 20rem;
+  max-height: 20rem;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-div#caixaQuatro {
-    width: 30%;
-    height: 30rem;
-    background-color: #8fdfc5;
-    position: relative;
-    margin-top: 0.7rem;
-    z-index: -1;
-    border-radius: 10px;
-    float: left;
-    margin-left: 2.5rem;
+.produto h2 {
+  font-size: 23px;
+  margin-top: 1rem;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-div#caixaCinco {
-    width: 30%;
-    height: 30rem;
-    background-color: #8fdfc5;
-    position: relative;
-    margin-top: 0.7rem;
-    z-index: -1;
-    border-radius: 10px;
-    float: left;
-    margin-left: 1rem;
+.add-to-cart {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.6rem 1.2rem;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-div#caixaSeis {
-    width: 30%;
-    height: 30rem;
-    background-color: #8fdfc5;
-    position: relative;
-    margin-top: 0.7rem;
-    z-index: -1;
-    border-radius: 10px;
-    float: left;
-    margin-left: 1rem;
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-h2 {
-    font-size: 1.3em;
-    margin: 0;
-    position: absolute;
-    left: 2rem;
-    top: 21rem;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
-h2#h2Dois {
-    font-size: 1.3em;
-    margin: 0;
-    position: absolute;
-    left: 2rem;
-    top: 21rem;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
-h2#Tres {
-    font-size: 0.89rem;
-    margin: 0;
-    position: absolute;
-    right: 2rem;
-    top: 21rem;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
-h2#Quatro {
-   font-size: 1.1em;
-    margin: 0;
-    position: absolute;
-    left: 2rem;
-    top: 21rem;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
-h2#Cinco {
-    font-size: 1.3em;
-    margin: 0;
-    position: absolute;
-    left: 2rem;
-    top: 21rem;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
-h2#Seis {
-    font-size: 1.3em;
-    margin: 0;
-    position: absolute;
-    left: 2rem;
-    top: 21rem;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
-button#Add {
-    position: absolute;
-    top: 26rem;
-    right: 3.4rem;
-    width: 70%;
-    height: 3rem;
-    background-color: #ff8a80;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    user-select: none;
-    -webkit-user-drag: none;
-}
-
-button#Add:hover {
+.add-to-cart:hover {
   background-color: #45a049;
-  transform: scale(1.05); 
+  transform: translateX(-50%) scale(1.05);
 }
 
-button#AddDois{
-    position: absolute;
-    top: 26rem;
-    right: 3.4rem;
-    width: 70%;
-    height: 3rem;
-    background-color: #ff8a80;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    user-select: none;
-    -webkit-user-drag: none;
+/* BOTÃO CARRINHO */
+#open-cart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #8c00ff, #ff37c0);
+  color: white;
+  border: 1px solid transparent;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-button#AddDois:hover {
-  background-color: #45a049;
-  transform: scale(1.05); 
+#open-cart:hover {
+  background: linear-gradient(135deg, #ff37c0, #8c00ff);
+  border-color: #ff37c0;
+  transform: scale(1.05);
 }
 
-button#AddTres{
-    position: absolute;
-    top: 26rem;
-    right: 3.4rem;
-    width: 70%;
-    height: 3rem;
-    background-color: #ff8a80;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    user-select: none;
-    -webkit-user-drag: none;
+#open-cart:active {
+  transform: scale(0.95);
 }
 
-button#AddTres:hover {
-  background-color: #45a049;
-  transform: scale(1.05); 
+#open-cart.bounce {
+  animation: bounce 0.3s ease;
 }
 
-button#AddQuatro{
-    position: absolute;
-    top: 26rem;
-    right: 3.4rem;
-    width: 70%;
-    height: 3rem;
-    background-color: #ff8a80;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    user-select: none;
-    -webkit-user-drag: none;
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
 }
 
-button#AddQuatro:hover {
-  background-color: #45a049;
-  transform: scale(1.05); 
+/* CARRINHO LATERAL */
+.cart {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 350px;
+  height: 100vh;
+  background: white;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: 0.3s ease;
+  overflow-y: auto;
+  z-index: 1000;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-button#AddCinco {
-    position: absolute;
-    top: 26rem;
-    right: 3.4rem;
-    width: 70%;
-    height: 3rem;
-    background-color: #ff8a80;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    user-select: none;
-    -webkit-user-drag: none;
+.cart.active {
+  right: 0;
 }
 
-button#AddCinco:hover {
-  background-color: #45a049;
-  transform: scale(1.05); 
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  font-size: 14px;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-button#AddSeis {
-    position: absolute;
-    top: 26rem;
-    right: 3.4rem;
-    width: 70%;
-    height: 3rem;
-    background-color: #ff8a80;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    user-select: none;
-    -webkit-user-drag: none;
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 900;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
-button#AddSeis:hover {
-  background-color: #45a049;
-  transform: scale(1.05); 
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
-img {
-    display: block; 
-    max-width: 90%;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 10px;
-    float: left;
-    margin-left: 17px;
-    margin-top: 10px;
-    user-select: none;
-    -webkit-user-drag: none;
-}   
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#close-cart {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#cart-items {
+  margin-top: 10px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.cart-footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  font-size: 14px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.remove-item {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.remove-item:hover {
+  background: darkred;
+}
+
+.add-to-cart.clicked {
+  transform: translateX(-50%) scale(0.95);
+  background-color: #2e7d32;
+}
