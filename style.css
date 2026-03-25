@@ -11,12 +11,13 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #66a3c9, #ff8a80, #d074d2);
-    color: white;
-    padding: 15px;
-    text-align: center;
-    user-select: none;
-    -webkit-user-drag: none;
+   background-image: url(https://i.postimg.cc/DZWpzxS4/Chat-GPT-Image-25-de-mar-de-2026-08-19-31.png);
+    background-size: cover;
+    background-position: center;
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 div#caixa {
@@ -55,19 +56,40 @@ div#caixaTres {
     margin-left: 1rem;
 }
 
-h1 {
-    user-select: none;
-    -webkit-user-drag: none;
-    font-size: 2.1em;
-    margin: 0;
-    background: linear-gradient(135deg, #4f0f94, #f11919, #161908);
-    background-size: 300% 300%;         
-    background-position: 0% 50%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    animation: gradientMove 4s ease-in-out infinite alternate;
+div#caixaQuatro {
+    width: 30%;
+    height: 30rem;
+    background-color: #8fdfc5;
+    position: relative;
+    margin-top: 0.7rem;
+    z-index: -1;
+    border-radius: 10px;
+    float: left;
+    margin-left: 2.5rem;
+}
+
+div#caixaCinco {
+    width: 30%;
+    height: 30rem;
+    background-color: #8fdfc5;
+    position: relative;
+    margin-top: 0.7rem;
+    z-index: -1;
+    border-radius: 10px;
+    float: left;
+    margin-left: 1rem;
+}
+
+div#caixaSeis {
+    width: 30%;
+    height: 30rem;
+    background-color: #8fdfc5;
+    position: relative;
+    margin-top: 0.7rem;
+    z-index: -1;
+    border-radius: 10px;
+    float: left;
+    margin-left: 1rem;
 }
 
 @keyframes gradientMove {
@@ -100,10 +122,40 @@ h2#h2Dois {
 }
 
 h2#Tres {
-    font-size: 0.8rem;
+    font-size: 0.89rem;
     margin: 0;
     position: absolute;
     right: 2rem;
+    top: 21rem;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+h2#Quatro {
+   font-size: 1.1em;
+    margin: 0;
+    position: absolute;
+    left: 2rem;
+    top: 21rem;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+h2#Cinco {
+    font-size: 1.3em;
+    margin: 0;
+    position: absolute;
+    left: 2rem;
+    top: 21rem;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+h2#Seis {
+    font-size: 1.3em;
+    margin: 0;
+    position: absolute;
+    left: 2rem;
     top: 21rem;
     user-select: none;
     -webkit-user-drag: none;
@@ -174,6 +226,75 @@ button#AddTres{
 }
 
 button#AddTres:hover {
+  background-color: #45a049;
+  transform: scale(1.05); 
+}
+
+button#AddQuatro{
+    position: absolute;
+    top: 26rem;
+    right: 3.4rem;
+    width: 70%;
+    height: 3rem;
+    background-color: #ff8a80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+button#AddQuatro:hover {
+  background-color: #45a049;
+  transform: scale(1.05); 
+}
+
+button#AddCinco {
+    position: absolute;
+    top: 26rem;
+    right: 3.4rem;
+    width: 70%;
+    height: 3rem;
+    background-color: #ff8a80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+button#AddCinco:hover {
+  background-color: #45a049;
+  transform: scale(1.05); 
+}
+
+button#AddSeis {
+    position: absolute;
+    top: 26rem;
+    right: 3.4rem;
+    width: 70%;
+    height: 3rem;
+    background-color: #ff8a80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+button#AddSeis:hover {
   background-color: #45a049;
   transform: scale(1.05); 
 }
