@@ -53,6 +53,13 @@ main {
   -webkit-user-drag: none;
 }
 
+h2#Sonic{
+  font-size: 20px;
+  margin-top: 1rem;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 .add-to-cart {
   position: absolute;
   bottom: 1rem;
