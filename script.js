@@ -19,7 +19,10 @@ if (overlay) overlay.addEventListener("click", toggleCart);
 
 /* Adicionar produto */
 addButtons.forEach(button => {
-  button.addEventListener("click", () => {
+  button.addEventListener("click",  () => {
+
+    if (button.disabled) return;
+button.disabled = true;
 
     const produto = button.closest(".produto");
     const nome = produto.querySelector("h2").innerText;
@@ -54,6 +57,7 @@ addButtons.forEach(button => {
     button.classList.add("clicked");
     setTimeout(() => {
       button.classList.remove("clicked");
+      button.disabled = false;
     }, 200);
 
   });
