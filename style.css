@@ -29,6 +29,13 @@ main {
   padding: 40px;
 }
 
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
 .produto {
   background-color: #8fdfc5;
   height: 30rem;
@@ -47,7 +54,7 @@ main {
 }
 
 .produto h2 {
-  font-size: 23px;
+  font-size: 21px;
   margin-top: 1rem;
   user-select: none;
   -webkit-user-drag: none;
@@ -71,14 +78,14 @@ h2#Sonic{
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: none !important;
   user-select: none;
   -webkit-user-drag: none;
 }
 
 .add-to-cart:hover {
   background-color: #45a049;
-  transform: translateX(-50%) scale(1.05);
+  transform: none !important;
 }
 
 /* BOTÃO CARRINHO */
@@ -94,26 +101,22 @@ h2#Sonic{
   cursor: pointer;
   user-select: none;
   -webkit-user-drag: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 #open-cart:hover {
   background: linear-gradient(135deg, #ff37c0, #8c00ff);
   border-color: #ff37c0;
-  transform: scale(1.05);
+  transform: none !important;
 }
 
 #open-cart:active {
-  transform: scale(0.95);
+  transform: none !important;
 }
 
 #open-cart.bounce {
-  animation: bounce 0.3s ease;
-}
-
-@keyframes bounce {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.15); }
-  100% { transform: scale(1); }
+  animation: none !important;
 }
 
 /* CARRINHO LATERAL */
@@ -138,11 +141,49 @@ h2#Sonic{
 }
 
 .cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
   font-size: 14px;
   user-select: none;
   -webkit-user-drag: none;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.cart-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cart-item-name {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.cart-item-price {
+  font-size: 13px;
+  color: #666;
+}
+
+.cart-count {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 12px;
+  margin-left: 8px;
+  font-size: 12px;
 }
 
 #overlay {
@@ -195,17 +236,6 @@ h2#Sonic{
   -webkit-user-drag: none;
 }
 
-.cart-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
-  font-size: 14px;
-  user-select: none;
-  -webkit-user-drag: none;
-}
-
 .remove-item {
   background: crimson;
   color: white;
@@ -223,6 +253,77 @@ h2#Sonic{
 }
 
 .add-to-cart.clicked {
-  transform: translateX(-50%) scale(0.95);
+  transform: none !important;
   background-color: #2e7d32;
 }
+
+.quantity-controls {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.0);
+  padding: 4px 6px;
+  border-radius: 8px;
+}
+
+.buy-btn {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: none !important;
+}
+
+.buy-btn .qty {
+  background: #fff;
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-weight: 800;
+  min-width: 20px;
+  text-align: center;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.pulse {
+  animation: pulse-anim 360ms ease;
+}
+
+@keyframes pulse-anim {
+  0% { transform: scale(1); box-shadow: 0 0 0 rgba(255,255,255,0); }
+  30% { transform: scale(1.35); box-shadow: 0 6px 14px rgba(0,0,0,0.15); }
+  100% { transform: scale(1); box-shadow: 0 0 0 rgba(255,255,255,0); }
+}
+
+.quantity-controls button.qty-decr,
+.quantity-controls button.qty-incr {
+  background: #eee;
+  color: #111;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.quantity-controls button.qty-incr {
+  background: #45a049;
+  color: #fff;
+}
+
+.quantity-controls button.qty-decr {
+  background: #d32f2f;
+  color: #fff;
+}
+
+.quantity-controls button:hover { transform: none !important; }
