@@ -24,6 +24,18 @@ function toggleCart() {
   overlay.classList.toggle("active");
 }
 
+function refreshCartAnimation(delay = 200) {
+  if (!cartPanel || !overlay) return;
+ 
+  cartPanel.classList.remove('active');
+  overlay.classList.remove('active');
+ 
+  setTimeout(() => {
+    cartPanel.classList.add('active');
+    overlay.classList.add('active');
+  }, delay);
+}
+
 openCartBtn.addEventListener("click", toggleCart);
 if (closeCartBtn) closeCartBtn.addEventListener("click", toggleCart);
 if (overlay) overlay.addEventListener("click", toggleCart);
@@ -97,10 +109,14 @@ addButtons.forEach(button => {
 
         delete cartMap[nome];
         item.remove();
+
+        refreshCartAnimation();
       });
 
       cartItems.appendChild(item);
       cartMap[nome] = { elem: item, qty: 1, price };
+
+      refreshCartAnimation();
     }
   }
 
@@ -149,6 +165,8 @@ addButtons.forEach(button => {
         elQty.textContent = cartMap[nome].qty;
         elLinePrice.textContent = 'R$ ' + formatMoney(cartMap[nome].qty * price);
       }
+
+      refreshCartAnimation();
     }
   });
 
